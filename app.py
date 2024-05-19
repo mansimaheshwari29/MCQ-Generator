@@ -93,7 +93,7 @@ st.markdown(
 # Sidebar for additional features
 with st.sidebar:
     st.markdown('<div class="sidebar-content">', unsafe_allow_html=True)
-    image_path = r"D:/major/logo.jpg"
+    image_path = os.path.join(os.path.dirname(__file__), 'logo.jpg')
     st.image(image_path,caption=" MCQ Generator")
     # st.image("logo.png", caption="AI MCQ Generator")
     st.write("Use this app to generate multiple-choice questions (MCQs) based on your input.")
